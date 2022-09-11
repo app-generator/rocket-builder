@@ -1,0 +1,19 @@
+{
+  "name": "@editorjs/text-variant-tune",
+  "version": "1.0.1",
+  "main": "dist/text-variant-tune.js",
+  "repository": "https://github.com/editor-js/text-variant-tune",
+  "author": "CodeX <team@codex.so>",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --mode production",
+    "build:dev": "webpack --mode development --watch"
+  },
+  "devDependencies": {
+    "css-loader": "^5.2.1",
+    "style-loader": "^2.0.0",
+    "svg-inline-loader": "^0.8.2",
+    "webpack": "^5.33.2",
+    "webpack-cli": "^4.6.0"
+  }
+}

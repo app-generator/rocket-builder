@@ -1,0 +1,48 @@
+{
+  "name": "@editorjs/embed",
+  "version": "2.5.1",
+  "keywords": [
+    "codex editor",
+    "embed",
+    "tool",
+    "editor.js",
+    "editorjs"
+  ],
+  "description": "Embed Tool for Editor.js",
+  "license": "MIT",
+  "repository": "https://github.com/editor-js/embed",
+  "main": "./dist/bundle.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "build:dev": "webpack --mode development --watch",
+    "test": "mocha -r @babel/register -r ignore-styles --recursive ./test",
+    "lint": "eslint src/ --ext .js",
+    "lint:errors": "eslint src/ --ext .js --quiet",
+    "lint:fix": "eslint src/ --ext .js --fix"
+  },
+  "author": {
+    "name": "CodeX",
+    "email": "team@codex.so"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-transform-runtime": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/register": "^7.9.0",
+    "@babel/runtime": "^7.9.2",
+    "babel-loader": "^8.1.0",
+    "chai": "^4.2.0",
+    "css-loader": "^3.5.3",
+    "debounce": "^1.2.0",
+    "eslint": "^7.25.0",
+    "eslint-config-codex": "^1.6.1",
+    "ignore-styles": "^5.0.1",
+    "mocha": "^7.1.1",
+    "postcss-loader": "^3.0.0",
+    "postcss-nested": "^4.2.1",
+    "postcss-nested-ancestors": "^2.0.0",
+    "style-loader": "^1.2.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  }
+}

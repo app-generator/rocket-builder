@@ -1,0 +1,32 @@
+{
+  "name": "@editorjs/quote",
+  "version": "2.4.0",
+  "keywords": [
+    "codex editor",
+    "tool",
+    "quote",
+    "editor.js",
+    "editorjs"
+  ],
+  "description": "Quote Tool for Editor.js",
+  "license": "MIT",
+  "repository": "https://github.com/editor-js/quote",
+  "main": "./dist/bundle.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "build:dev": "webpack --mode development --watch"
+  },
+  "author": {
+    "name": "CodeX",
+    "email": "team@codex.so"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^1.0.0",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3"
+  }
+}

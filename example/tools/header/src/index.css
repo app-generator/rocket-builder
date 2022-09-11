@@ -1,0 +1,37 @@
+/**
+ * Plugin styles
+ */
+.ce-header {
+  padding: 0.6em 0 3px;
+  margin: 0;
+  line-height: 1.25em;
+  outline: none;
+}
+
+.ce-header p,
+.ce-header div{
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/**
+ * Styles for Plugin icon in Toolbar
+ */
+.ce-header__icon {}
+
+.ce-header[contentEditable=true][data-placeholder]::before{
+  position: absolute;
+  content: attr(data-placeholder);
+  color: #707684;
+  font-weight: normal;
+  display: none;
+  cursor: text;
+}
+
+.ce-header[contentEditable=true][data-placeholder]:empty::before {
+  display: block;
+}
+
+.ce-header[contentEditable=true][data-placeholder]:empty:focus::before {
+  display: none;
+}

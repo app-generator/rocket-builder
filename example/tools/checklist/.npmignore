@@ -1,0 +1,4 @@
+.idea/
+src/
+webpack.config.js
+yarn.lock

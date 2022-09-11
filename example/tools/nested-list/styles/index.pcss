@@ -1,0 +1,55 @@
+.cdx-nested-list {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  counter-reset: item;
+  list-style: none;
+
+  &__item {
+    line-height: 1.6em;
+    display: flex;
+    margin: 2px 0;
+
+    [contenteditable]{
+      outline: none;
+    }
+
+    &-body {
+      flex-grow: 2;
+    }
+
+    &-content,
+    &-children {
+      flex-basis: 100%;
+    }
+
+    &-content {
+      word-break: break-word;
+      white-space: pre-wrap;
+    }
+
+    &-children {}
+
+    &::before {
+      counter-increment: item;
+      margin-right: 5px;
+      white-space: nowrap;
+    }
+  }
+
+  &--ordered > &__item::before {
+    content: counters(item, ".") ". ";
+  }
+
+  &--unordered > &__item::before {
+    content: "•";
+  }
+
+  &__settings {
+    display: flex;
+
+    .cdx-settings-button {
+      width: 50%;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.cdx-text-variant--call-out .ce-block__content {
+  border: 1px solid rgb(255, 135, 135);
+  padding: 8px 16px;
+  border-radius: 6px;
+  box-shadow: 0 0 0 5px rgba(255, 120, 84, 0.16);
+  margin-top: 0.6em;
+  margin-bottom: 0.6em;
+}
+
+.cdx-text-variant--citation {
+  font-style: italic;
+}
+
+.cdx-text-variant--details {
+  font-size: 0.84em;
+}
+
+.cdx-text-variant__toggler svg {
+  width: 20px;
+  height: 20px;
+}

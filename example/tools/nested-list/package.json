@@ -1,0 +1,28 @@
+{
+  "name": "@editorjs/nested-list",
+  "version": "1.0.2",
+  "description": "Nested list Tool for EditorJS",
+  "main": "dist/nested-list.js",
+  "repository": "https://github.com/editor-js/nested-list.git",
+  "author": "CodeX <team@codex.so>",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --mode production",
+    "build:dev": "webpack --mode development --watch",
+    "lint": "eslint src/ --quiet",
+    "lint:errors": "eslint src/ --quiet",
+    "lint:fix": "eslint src/ --fix"
+  },
+  "devDependencies": {
+    "css-loader": "^5.0.2",
+    "eslint": "^7.22.0",
+    "eslint-loader": "^4.0.2",
+    "postcss": "^8.2.6",
+    "postcss-loader": "^4.2.0",
+    "postcss-nested": "^5.0.3",
+    "postcss-nested-ancestors": "^2.0.0",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.24.1",
+    "webpack-cli": "^4.5.0"
+  }
+}

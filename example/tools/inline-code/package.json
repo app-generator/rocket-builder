@@ -1,0 +1,34 @@
+{
+  "name": "@editorjs/inline-code",
+  "version": "1.3.1",
+  "keywords": [
+    "codex editor",
+    "inline",
+    "code",
+    "tool",
+    "editor.js",
+    "editorjs"
+  ],
+  "description": "InlineCode Tool for Editor.js",
+  "license": "MIT",
+  "repository": "https://github.com/editor-js/inline-code",
+  "main": "./dist/bundle.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "build:dev": "webpack --mode development --watch"
+  },
+  "author": {
+    "name": "CodeX Team",
+    "email": "team@ifmo.su"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^1.0.0",
+    "raw-loader": "^3.1.0",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3"
+  }
+}

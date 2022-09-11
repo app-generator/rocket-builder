@@ -1,0 +1,24 @@
+name: Internal patterns test
+
+on: [pull_request]
+
+jobs:
+  lint:
+    name: Patterns
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Cache node modules
+        uses: actions/cache@v1
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.OS }}-build-${{ env.cache-name }}-
+            ${{ runner.OS }}-build-
+            ${{ runner.OS }}-
+
+      - run: yarn install
+      - run: yarn build
+      - run: yarn test

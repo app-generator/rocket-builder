@@ -1,0 +1,5 @@
+.idea/
+assets/
+src/
+webpack.config.js
+yarn.lock

@@ -1,0 +1,7 @@
+.idea/
+docs/
+src/
+test/
+.babelrc
+webpack.config.js
+yarn.lock

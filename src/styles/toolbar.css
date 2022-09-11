@@ -1,0 +1,86 @@
+.ce-toolbar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  transition: opacity 100ms ease;
+  will-change: opacity, top;
+
+  display: none;
+
+  &--opened {
+    display: block;
+  }
+
+  &__content {
+    max-width: var(--content-width);
+    margin: 0 auto;
+    position: relative;
+  }
+
+  &__plus {
+    @apply --toolbox-button;
+    flex-shrink: 0;
+
+    &-shortcut {
+      opacity: 0.6;
+      word-spacing: -2px;
+      margin-top: 5px;
+    }
+
+    @media (--mobile){
+      @apply --overlay-pane;
+      position: static;
+    }
+  }
+
+  /**
+   * Block actions Zone
+   * -------------------------
+   */
+  &__actions {
+    position: absolute;
+    right: 100%;
+    opacity: 0;
+    display: flex;
+    padding-right: 5px;
+
+    &--opened {
+      opacity: 1;
+    }
+
+    @media (--mobile){
+      right: auto;
+    }
+  }
+
+  &__settings-btn {
+    @apply --toolbox-button;
+
+    margin-left: 5px;
+    cursor: pointer;
+    user-select: none;
+
+    @media (--not-mobile){
+      width: 18px;
+    }
+
+    &--hidden {
+      display: none;
+    }
+
+    @media (--mobile){
+      @apply --overlay-pane;
+      position: static;
+    }
+  }
+}
+
+/**
+ * Styles for Narrow mode
+ */
+.codex-editor--narrow .ce-toolbar__plus {
+  @media (--not-mobile) {
+    left: 5px;
+  }
+}

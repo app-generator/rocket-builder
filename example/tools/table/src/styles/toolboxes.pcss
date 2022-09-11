@@ -1,0 +1,58 @@
+.tc-toolbox {
+  --toolbox-padding: 6px;
+  --popover-margin: 30px;
+  --toggler-click-zone-size: 30px;
+  --toggler-dots-color: #7B7E89;
+  --toggler-dots-color-hovered: #1D202B;
+
+  position: absolute;
+  cursor: pointer;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.1s;
+
+  will-change: left, opacity;
+
+  &--column {
+    top: calc(-1 * (var(--toggler-click-zone-size)));
+    transform: translateX(calc(-1 * var(--toggler-click-zone-size) / 2));
+    will-change: left, opacity;
+  }
+
+  &--row {
+    left: calc(-1 * var(--popover-margin));
+    transform: translateY(calc(-1 * var(--toggler-click-zone-size) / 2));
+    margin-top: -1px; /* because of top border */
+    will-change: top, opacity;
+  }
+
+  &--showed {
+    opacity: 1;
+  }
+
+  .tc-popover {
+    position: absolute;
+    top: 0;
+    left: var(--popover-margin)
+  }
+
+  &__toggler {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--toggler-click-zone-size);
+    height: var(--toggler-click-zone-size);
+    color: var(--toggler-dots-color);
+    opacity: 0;
+    transition: opacity 150ms ease;
+    will-change: opacity;
+
+    &:hover {
+      color: var(--toggler-dots-color-hovered);
+    }
+  }
+}
+
+.tc-wrap:hover .tc-toolbox__toggler {
+  opacity: 1;
+}

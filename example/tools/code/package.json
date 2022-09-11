@@ -1,0 +1,32 @@
+{
+  "name": "@editorjs/code",
+  "version": "2.7.0",
+  "keywords": [
+    "codex editor",
+    "code",
+    "tool",
+    "editor.js",
+    "editorjs"
+  ],
+  "description": "Code Tool for Editor.js",
+  "license": "MIT",
+  "repository": "https://github.com/editor-js/code",
+  "main": "./dist/bundle.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "build:dev": "webpack --mode development --watch"
+  },
+  "author": {
+    "name": "CodeX",
+    "email": "team@codex.so"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^3.5.3",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3"
+  }
+}

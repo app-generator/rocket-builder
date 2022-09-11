@@ -1,0 +1,8 @@
+{
+  "extends": [
+    "codex"
+  ],
+  "rules": {
+    "jsdoc/no-undefined-types": "off"
+  }
+}
