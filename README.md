@@ -18,4 +18,4 @@ Visit the editor in the browser `http://127.0.0.1:3000/example/example-dev.html`
 <br />
 
 ---
-Rocket Builder - Open-source page builder provided by [AppSeed](https://appseed.us)
+**Rocket Builder** - Open-source page builder provided by [AppSeed](https://appseed.us)
